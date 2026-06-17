@@ -16,7 +16,7 @@ This repository contains a collection of projects, experiments, and hands-on imp
 
 * HTML5
 * CSS3
-* JavaScript (ES6+)
+* JavaScript
 * Git & GitHub
 
 ## 📂 Projects
@@ -27,21 +27,11 @@ This repository contains a collection of projects, experiments, and hands-on imp
 
 *More projects will be added as I continue my learning journey.*
 
-## 📚 Topics Covered
-
-* HTML Fundamentals
-* CSS Styling & Layouts
-* Responsive Design
-* JavaScript Basics
-* DOM Manipulation
-* Event Handling
-* Interactive UI Development
-
 ## 🌱 Current Learning Path
 
 * Data Structures & Algorithms in Java
 * Full Stack Web Development
-* Aptitude & Problem Solving for Placements
+* Aptitude & Problem Solving
 
 
 ## 🤝 Connect With Me
