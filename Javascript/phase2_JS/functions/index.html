@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+<body>
+    <h1>Functions in JavaScript</h1>
+    <p>Functions are reusable blocks of code that perform a specific task.
+        <ul>They are:
+            <li>reusable</li>
+            <li>accessible</li>
+            <li>Systematic</li>
+        </ul>
+    </p>
+    <h2>Function Declaration</h2>
+    <pre>
+        function functionName(parameters) {
+            // code to be executed
+        } 
+        functionName(arguments);  // calling the function
+    </pre>
+    <h2>Function Expression/ First Class Functions</h2>
+    <p>The function is assigned to a variable.</p>
+    <pre>
+        const functionName = function(parameters) {
+            // code to be executed
+        };
+        functionName(arguments);  // calling the function
+    </pre>
+    <h2>Arrow Function</h2>
+    <p>A shorter syntax for writing functions.</p>
+    <pre>
+        const functionName = (parameters) => {
+            // code to be executed
+        };
+        functionName(arguments);  // calling the function
+    </pre>
+    <h2>IIFE: Immediately Invoked Function Expression</h2>
+    <p>A function that is executed immediately after it is defined.</p>
+    <pre>
+        (function functionName(parameters) {
+            // code to be executed
+        })(arguments);  // calling the function
+    </pre>
+    <h2>Callback Function</h2>
+    <p>Callback function are the functions that are passed as argument to another function.</p>
+    <pre> 
+        function callback(name, callback){
+            callback(name); //main("Hello")
+        }
+        function main(a){
+            console.log(a);
+        }
+        callback("Hello", main); 
+        //main i.e. function name is passed as argument that calls the main() function inside callback() function.</pre>
+        <p>Output:"Hello" </p>
+
+    <h2>Higher-Order Function</h2>
+    <p>A function that takes another function as an argument or returns a function as a result.</p>
+    <pre>
+        function higherOrderFunction(callback) {
+            // code to be executed
+            callback();
+        }
+
+        higherOrderFunction(function() {
+            // code to be executed as a callback
+        });
+    </pre>
+    <script src="script.js"></script>
+</body>
+</html>
