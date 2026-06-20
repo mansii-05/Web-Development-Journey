@@ -21,6 +21,7 @@ A simple interactive Bulb On/Off project built using HTML, CSS, and JavaScript. 
 ├── index.html
 ├── style.css
 ├── script.js
+├── screenshots/
 └── README.md
 
 ## 🎯 Learning Outcomes

@@ -2,7 +2,7 @@
 
 Welcome to my Web Development Journey repository!
 
-This repository contains a collection of projects, experiments, and hands-on implementations that I build while learning HTML, CSS, JavaScript, and Full Stack Web Development. The goal of this repository is to document my learning progress, strengthen my development skills, and showcase my growth as a developer.
+This repository documents my learning journey in Web Development through hands-on projects, practice exercises, and real-world implementations. It serves as a record of my progress while learning and applying modern web technologies.
 
 ## 🎯 Objectives
 
@@ -32,6 +32,13 @@ This repository contains a collection of projects, experiments, and hands-on imp
 * Data Structures & Algorithms in Java
 * Full Stack Web Development
 * Aptitude & Problem Solving
+
+## 📈 Learning Approach
+
+* Learn concepts
+* Practice exercises
+* Build mini projects
+* Improve through consistency
 
 
 ## 🤝 Connect With Me
