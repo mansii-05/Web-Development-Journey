@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h1>ARRAY</h1>
+    <dl>
+        <dt>Array</dt>
+        <dd>An array is a collection of ordered set of elements.It can contain values of different datatypes.</dd>
+    </dl>
+    <ol><b>Mutating methods of array</b>
+        <br>
+        <li>push(x): adds at end</li>
+        <li>pop(): removes from end and returns it.</li>
+        <li>unshift(): adds at beginning</li>
+        <li>shift(): deletes 1st element of an array</li>
+        <li>sort(): arrange in ascending order (Treats numbers as strings)
+        </li>
+        <li>reverse(): reverses the order of array</li>
+        <li>splice(): to add or remove element(s) at/from desired index.
+            <ul>
+                <li>To add: splice(startIndex, deleteCount, ...items)</li>
+                <li>To delete: splice(startIndex, deleteCount)</li>
+            </ul>
+        </li>
+    </ol>
+    <ol>
+        <b>Non - Mutating methods of array</b>
+        <br>
+        <li>slice(startIndex,endIndex): returns new array</li>
+        <li>concat(): add two arrays</li>
+        <li>includes(): returns boolean value, checks if element is present or not</li>
+        <li>indexOf(): returns index of element if element is present else -1</li>
+        <li>join(): joins the elemets of an array and returns string</li>
+    </ol>
+
+    <h2>map()</h2>
+    <pre>
+        array_name.map(function(element_value, index, array){
+            //code to be executed
+            return ;
+        })
+    </pre>
+    <ul>
+        <li>Used to transform an array</li>
+        <li>returns an array of same size</li>
+    </ul>
+    <h2>filter()</h2>
+    <pre>
+        array_name.map(function(element_value, index, array){
+            //code to be executed
+            return;
+        })
+    </pre>
+    <ul>
+        <li>Used to filter an array</li>
+        <li>returns an array not necessarily of same size</li>
+        <li>keeps those elements only that pass a given condition</li>
+    </ul>
+    <h2>reduce(): Boil the array down to a single value. </h2>
+    <pre>
+      var variableName = array_name.reduce(function(accumulator, currentValue){
+                                //code to be executed
+                                return;
+                                }, initial value)
+    </pre>
+    <ul>
+        <li>Accumulator stores previous return value.</li>
+        <li>When no initial value is provided, acc takes 1sT element as initial value and iteration starts from second element.</li>
+        </ul>
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
