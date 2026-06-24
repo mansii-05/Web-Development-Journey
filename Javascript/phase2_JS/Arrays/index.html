@@ -29,6 +29,7 @@
             </ul>
         </li>
     </ol>
+
     <ol>
         <b>Non - Mutating methods of array</b>
         <br>
@@ -50,6 +51,7 @@
         <li>Used to transform an array</li>
         <li>returns an array of same size</li>
     </ul>
+
     <h2>filter()</h2>
     <pre>
         array_name.map(function(element_value, index, array){
@@ -62,18 +64,52 @@
         <li>returns an array not necessarily of same size</li>
         <li>keeps those elements only that pass a given condition</li>
     </ul>
+    
     <h2>reduce(): Boil the array down to a single value. </h2>
     <pre>
-      var variableName = array_name.reduce(function(accumulator, currentValue){
-                                //code to be executed
-                                return;
-                                }, initial value)
+        var variableName = array_name.reduce(function(accumulator, currentValue){
+            //code to be executed
+            return;
+        }, initial value)
     </pre>
     <ul>
         <li>Accumulator stores previous return value.</li>
-        <li>When no initial value is provided, acc takes 1sT element as initial value and iteration starts from second element.</li>
-        </ul>
+        <li>When no initial value is provided, acc takes 1st element as initial value and iteration starts from second element.</li>
+    </ul>
     
+    <h2>find(): Returns 1st matching element</h2>
+    <pre>
+        array_name.find(function(element){
+            //code to be executed
+            return;
+        })
+    </pre>
+
+    <h2>findIndex(): Returns index of 1st matching element</h2>
+    <pre>
+        array_name.findIndex(function(element){
+            //code to be executed
+            return;
+        })
+    </pre>
+
+    <h2>some(): Returns true if atleast one element matches</h2>
+    <pre>
+        array_name.some(function(element){
+            //code to be executed
+            return;
+        })
+    </pre>
+    
+    <h2>every(): Returns true if every element matches</h2>
+    <pre>
+        array_name.every(function(element){
+            //code to be executed
+            return;
+        })
+    </pre>
+    
+
     <script src="./script.js"></script>
 </body>
 

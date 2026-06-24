@@ -225,6 +225,55 @@ console.log("Sum is: ", sum)
 // 50
 // Sum is: 150
 
+//find() : returns 1st matching element
+console.log("find()")
+//example 1
+var brr =[23, 32, 98, 350, 87]
+var finds= brr.find(function(e){
+    return e%2==0;
+})
+console.log(finds)
+//example 2
+var crr = [ 'aman', 'roy', 'jhanvi']
+var findstr= crr.find(function(e){
+    return e.includes('a');
+})
+console.log(findstr)
+
+//findIndex() : returns 1st matching element
+console.log("findIndex()")
+//example 1
+var brr =[23, 32, 98, 350, 87]
+var findidx= brr.findIndex(function(e){
+    return e%2==0;
+})
+console.log(findidx) 
+
+//example 2
+var crr = [ 'aman', 'roy', 'jhanvi']
+var strIdx= crr.findIndex(function(e){
+    return e.includes('a');
+})
+console.log(strIdx) 
+
+//some(): if atleast 1 element matches
+console.log("some()")
+var crr = [ 'aman', 'roy', 'jhanvi']
+var some_res= crr.some(function(e){
+    return e.includes('a');
+})
+console.log(some_res)
+
+
+//every(): If every element matches
+console.log("every()")
+var crr = [ 'aman', 'roy', 'jhanvi']
+var every_res= crr.every(function(e){
+    return e.includes('a');
+})
+console.log(every_res) 
+
+
 
 
 
