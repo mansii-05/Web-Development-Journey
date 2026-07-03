@@ -95,3 +95,33 @@ obj3.sayHi() //window object
 
 console.log("method scope of arrow func")
 obj3.getIntro()
+
+//-------------------------------this in method inside nested object --------------------------------
+
+var obj4 = {
+  fname: "Samaira ",
+  age: 20,
+  company: {
+    fname: "Google",
+    getName: function () {
+      console.log(this.fname); //google
+    },
+  },
+};
+obj4.company.getName(); //google
+
+
+var obj5 = {
+  fname: "Samaira ",
+  age: 30,
+  getCompany: function () {
+    const company = {
+      fname: "Google",
+      getname:  () => {
+        console.log(this.fname); //Samaira
+      },
+    };
+    company.getname(); //samaira
+  },
+};
+obj5.getCompany(); //samaira
