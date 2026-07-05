@@ -6,7 +6,7 @@ console.log(arr.__proto__) //array, ab iska bhi proto hoga,..
 console.log(arr.__proto__.__proto__) //object, iska bhi prototype hoga null
 console.log(arr.__proto__.__proto__.__proto__) //null
 
-//------------------------Object------------------------------------
+//------------------------Object-------------------------------------------
 
 var obj = {
     name: "Bob"

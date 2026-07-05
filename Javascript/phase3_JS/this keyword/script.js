@@ -46,7 +46,7 @@ var obj = {
                 console.log(this); //window object
         }
         sayTata = function () {
-                console.log(this); //window object
+                console.log(this); //window object (plain function call)
         }
         sayBye()
         sayTata()
