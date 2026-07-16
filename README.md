@@ -23,6 +23,7 @@ This repository documents my learning journey in Web Development through hands-o
 
 | Project      | Description                                                            |
 | ------------ | ---------------------------------------------------------------------- |
+| SignUp Page  | Interactive SignUp project using HTML and CSS.                         |
 | Bulb Project | Interactive bulb ON/OFF project using JavaScript and DOM manipulation. |
 
 *More projects will be added as I continue my learning journey.*
