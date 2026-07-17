@@ -34,9 +34,19 @@ ah1.innerHTML = "<p>Lorem ipsum dolor.</p>"
 console.log(ah1)
 
 const ah2= document.querySelector("h2")
-ah2.innerText = "<p>Lorem ipsum dolor.</p>"
+ah2.innerText = "Lorem ipsum dolor."
 console.log(ah2)
 
 const ah22= document.querySelector("#what")
-ah22.textContent = "<p>Lorem ipsum dolor.</p>"
+ah22.textContent = "Lorem ipsum dolor."
 console.log(ah22)
+
+//-----------------------Selecting body-------------------------
+const b = document.body;
+
+console.log(b.innerText) //changes the format
+console.log(b.innerHTML) //gives html code
+console.log(b.textContent) //doesn't change the format
+
+//applying css..
+b.style.color = "red";

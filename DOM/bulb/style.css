@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    height: 100%;
+    width: 100%;
+}
+.bulb {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    background-color: grey;
+    border-radius: 50% 50% 45% 45%;
+    border: 4px solid black;
+}
+button{
+    padding: 33px 35px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.light{
+    background-color: yellow;
+    border-color: yellowgreen;
+}
