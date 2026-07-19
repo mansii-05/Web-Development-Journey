@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button>Get</button>
+<section>
+
+    <h1>JavaScript Events</h1>
+
+    <p>
+        An <strong>event</strong> is an action performed by the user or browser
+        that JavaScript can respond to.
+    </p>
+
+    <h2>Examples of Events</h2>
+
+    <ul>
+        <li>Clicking a button</li>
+        <li>Typing in an input field</li>
+        <li>Moving the mouse</li>
+        <li>Pressing a keyboard key</li>
+        <li>Submitting a form</li>
+        <li>Loading a webpage</li>
+    </ul>
+
+    <hr>
+
+    <h2>Adding Events</h2>
+
+    <h3>1. Inline Event (Not Recommended)</h3>
+
+<pre>
+&lt;button onclick="showMessage()"&gt;
+    Click Me
+&lt;/button&gt;
+</pre>
+
+    <h3>2. Using addEventListener() (Recommended)</h3>
+
+<pre>
+const button = document.querySelector("button");
+
+button.addEventListener("click", function () {
+    console.log("Button clicked");
+});
+</pre>
+
+    <hr>
+
+    <h2>Mouse Events</h2>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Event</th>
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>click</td>
+            <td>Occurs when an element is clicked.</td>
+        </tr>
+
+        <tr>
+            <td>dblclick</td>
+            <td>Occurs when an element is double-clicked.</td>
+        </tr>
+
+        <tr>
+            <td>mousedown</td>
+            <td>Occurs when the mouse button is pressed.</td>
+        </tr>
+
+        <tr>
+            <td>mouseup</td>
+            <td>Occurs when the mouse button is released.</td>
+        </tr>
+
+        <tr>
+            <td>mousemove</td>
+            <td>Occurs whenever the mouse moves.</td>
+        </tr>
+
+        <tr>
+            <td>mouseenter</td>
+            <td>Occurs when the mouse enters an element.</td>
+        </tr>
+
+        <tr>
+            <td>mouseleave</td>
+            <td>Occurs when the mouse leaves an element.</td>
+        </tr>
+
+        <tr>
+            <td>mouseover</td>
+            <td>Occurs when the mouse moves over an element or its children.</td>
+        </tr>
+
+        <tr>
+            <td>mouseout</td>
+            <td>Occurs when the mouse leaves an element or its children.</td>
+        </tr>
+
+        <tr>
+            <td>contextmenu</td>
+            <td>Occurs when the right mouse button is clicked.</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Keyboard Events</h2>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+            <th>Event</th>
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>keydown</td>
+            <td>Occurs when a key is pressed. Works for all keys.</td>
+        </tr>
+
+        <tr>
+            <td>keyup</td>
+            <td>Occurs when a key is released.</td>
+        </tr>
+
+        <tr>
+            <td>keypress</td>
+            <td>Occurs for printable keys only. Deprecated.</td>
+        </tr>
+
+    </table>
+
+    <h3>Example</h3>
+
+<pre>
+document.addEventListener("keydown", function(event){
+
+    console.log(event.key);
+
+});
+</pre>
+
+    <hr>
+
+    <h2>Form Events</h2>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+            <th>Event</th>
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>submit</td>
+            <td>Occurs when a form is submitted.</td>
+        </tr>
+
+        <tr>
+            <td>input</td>
+            <td>Occurs whenever the user types.</td>
+        </tr>
+
+        <tr>
+            <td>change</td>
+            <td>Occurs after the value changes.</td>
+        </tr>
+
+        <tr>
+            <td>focus</td>
+            <td>Occurs when an element gets focus.</td>
+        </tr>
+
+        <tr>
+            <td>blur</td>
+            <td>Occurs when an element loses focus.</td>
+        </tr>
+
+        <tr>
+            <td>reset</td>
+            <td>Occurs when a form is reset.</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <h2>Window Events</h2>
+
+    <table border="1" cellpadding="8">
+
+        <tr>
+            <th>Event</th>
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>load</td>
+            <td>Occurs when the webpage finishes loading.</td>
+        </tr>
+
+        <tr>
+            <td>resize</td>
+            <td>Occurs when the browser window is resized.</td>
+        </tr>
+
+        <tr>
+            <td>scroll</td>
+            <td>Occurs when the page is scrolled.</td>
+        </tr>
+
+        <tr>
+            <td>beforeunload</td>
+            <td>Occurs before leaving the page.</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <h2>Event Object</h2>
+
+    <p>
+        Every event automatically creates an <strong>event object</strong>.
+        It contains information about the event.
+    </p>
+
+<pre>
+document.addEventListener("click", function(event){
+
+    console.log(event);
+
+});
+</pre>
+
+    <h3>Useful Properties</h3>
+
+    <ul>
+        <li><strong>event.target</strong> → Element that triggered the event</li>
+        <li><strong>event.type</strong> → Type of event</li>
+        <li><strong>event.key</strong> → Pressed keyboard key</li>
+        <li><strong>event.clientX</strong> → Mouse X position</li>
+        <li><strong>event.clientY</strong> → Mouse Y position</li>
+    </ul>
+
+    <hr>
+
+    <h2>preventDefault()</h2>
+
+    <p>
+        Prevents the browser's default behavior.
+    </p>
+
+<pre>
+form.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+});
+</pre>
+
+    <hr>
+
+    <h2>stopPropagation()</h2>
+
+    <p>
+        Stops the event from bubbling to parent elements.
+    </p>
+
+<pre>
+button.addEventListener("click", function(event){
+
+    event.stopPropagation();
+
+});
+</pre>
+
+    <hr>
+
+    <h2>Event Bubbling</h2>
+
+    <p>
+        Event Bubbling means the event first occurs on the target element,
+        then moves upward to its parent elements.
+    </p>
+
+<pre>
+Child
+   ↓
+Parent
+   ↓
+Body
+   ↓
+Document
+</pre>
+    <hr>
+    
+    <h2>Event Delegation</h2>
+    <p>
+        Event Delegation means attaching one event listener to a parent
+        element instead of multiple child elements.
+    </p>
+<pre>
+document.getElementById("list").addEventListener("click", function(event){
+
+    console.log(event.target);
+
+});
+</pre>
+    <hr>
+    <h2>Commonly Used Events</h2>
+    <ul>
+        <li>click</li>
+        <li>dblclick</li>
+        <li>keydown</li>
+        <li>keyup</li>
+        <li>input</li>
+        <li>change</li>
+        <li>submit</li>
+        <li>focus</li>
+        <li>blur</li>
+        <li>mouseover</li>
+        <li>mouseout</li>
+        <li>mouseenter</li>
+        <li>mouseleave</li>
+        <li>scroll</li>
+        <li>load</li>
+        <li>resize</li>
+    </ul>
+    <hr>
+</section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
