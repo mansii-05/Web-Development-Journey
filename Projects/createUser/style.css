@@ -1,92 +1,3 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'helvetica neue';
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-}
-
-body{
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    padding: 30px;
-    margin: 20px 0px;
-    gap: 10px;
-    width : 40%;
-    height: 30%;
-    background-color: rgb(94, 94, 94);
-    border-radius: 25px;
-    border: 2px solid whitesmoke;
-}
-
-input{
-    padding: 10px;
-    border-radius: 12px;
-    outline: none;
-}
-
-button{
-    padding: 5px;
-    border-radius: 12px;
-    outline: none;
-    font-size: large;
-    font-weight: bold;
-    color: white;
-    background-color: grey;
-    transition : 0.2s ease-in ;
-}
-
-button:hover {
-    background-color: darkgray;
-    color: black;
-}
-
-.users {
-    height: 100%;
-    width: 100%;
-    display : flex;
-    flex-direction: column ;
-    gap: 10%;
-    /* flex-wrap: wrap; */
-/*   
-}
-.user-card{
-    /* height:300px;
-    width : 300px; */
- /*   height: 60%;
-    width: 20%;
-    border-radius: 25px;
-    border-color: 2px solid white;
-    background-color: yellow;
-    /* margin-left: 30px; */
-/*}
-
-.img-box {
-    height: 70%;
-    width : 100%;
-    padding: 5px;
-    margin: 5px 10px;
-    border-radius: 15px;
-    border: 1px solid black;
-}
-
-.img-box img {
-    height: 100%;
-    width : 100%;
-    object-fit : cover ;
-} */
-
 *{
     margin: 0;
     padding: 0;
@@ -114,9 +25,9 @@ form{
     display: flex;
     flex-direction: column;
     align-self: center;
-    padding: 30px;              /* Kept same */
-    margin: 20px 0px;           /* Kept same */
-    gap: 10px;
+    padding: 30px;             
+    margin: 20px 0px;  
+    gap : 10px ;         
     width: 40%;
     background-color: rgb(94, 94, 94);
     border-radius: 25px;
@@ -131,7 +42,7 @@ input{
     font-size: 15px;
 }
 
-button{
+.create{
     padding: 10px;
     border-radius: 12px;
     outline: none;
@@ -144,7 +55,7 @@ button{
     transition: 0.2s ease-in;
 }
 
-button:hover{
+.create:hover{
     background-color: darkgray;
     color: black;
 }
@@ -158,8 +69,6 @@ button:hover{
     flex-wrap: wrap;
     gap: 30px;
 }
-
-/* ================= USER CARD ================= */
 
 .user-card{
     width: 270px;
@@ -207,7 +116,39 @@ button:hover{
     word-break: break-word;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= QUICK ACTIONS ================== */
+
+.actions{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    padding: 10px 20px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+button:hover{
+    background-color: darkgray;
+    color: black;
+}
+
+#edit {
+    background-color: burlywood;
+}
+
+#del{
+    background-color: #e05555;
+}
+
+/* ================= RESPONSIVENESS ================= */
 
 @media (max-width: 900px){
     form{
