@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Delegation</h1>
+    <main>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button id="five">5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>10</button>
+    </main>
+
+<hr>
+<p>
+    <strong>Event Delegation</strong> is a JavaScript technique where a single
+    event listener is attached to a <strong>parent element</strong> instead of
+    attaching separate event listeners to each child element.
+</p>
+
+<p>
+    It works because of <strong>event bubbling</strong>, where an event triggered
+    on a child element automatically bubbles up to its parent.
+</p>
+
+<h3>Advantages</h3>
+<ul>
+    <li>Improves performance by using fewer event listeners.</li>
+    <li>Works for dynamically created elements.</li>
+    <li>Makes the code cleaner and easier to maintain.</li>
+</ul>
+
+<h3>Syntax</h3>
+<pre>
+parent.addEventListener("click", function(event){
+
+    if(event.target.matches(".child")){
+        // Your code here
+    }
+
+});
+</pre>
+
+<h3>Example</h3>
+<pre>
+&lt;ul id="list"&gt;
+    &lt;li&gt;Apple&lt;/li&gt;
+    &lt;li&gt;Mango&lt;/li&gt;
+    &lt;li&gt;Banana&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<pre>
+const list = document.getElementById("list");
+
+list.addEventListener("click", function(event){
+
+    console.log(event.target.textContent);
+
+});
+</pre>
+
+<p>
+    <strong>Output:</strong> Clicking on any list item prints its text
+    (<code>Apple</code>, <code>Mango</code>, or <code>Banana</code>) to the console
+    using a single event listener attached to the parent <code>&lt;ul&gt;</code>.
+</p>
+
+    <script src="./script.js"></script>
+</body>
+</html>
