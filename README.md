@@ -27,7 +27,8 @@ This repository documents my learning journey in Web Development through hands-o
 | Bulb Project | Interactive bulb ON/OFF project using JavaScript and DOM manipulation. |
 | createUsers  | A JavaScript mini CRUD application that allows users to create, edit,  |
 |              | and delete profile cards dynamically using DOM manipulation.           |
-
+| BoxClick Game| An interactive JavaScript game where users click randomly appearing    |
+|              | boxes to earn points before time runs out.                             |
 
 *More projects will be added as I continue my learning journey.*
 
@@ -38,6 +39,7 @@ Watch the project demonstrations to explore the features and functionality of ea
 | Project      | Demo Video                                                             |
 | ------------ | ---------------------------------------------------------------------- |
 | Create Users | [Watch Demo](https://youtu.be/kekBm66RB34)                             |
+| BoxClick Game| [Watch Demo](https://youtu.be/_kgfSibjSQI)                             |
 
 > **Note:** Demo videos are hosted on YouTube to keep this repository lightweight and avoid GitHub's file size limitations.
 
