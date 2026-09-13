@@ -1,6 +1,6 @@
 //Student Grade Tracker
 //Approach 1
-const students = [
+/* const students = [
     {
         name: "Aarav",
         maths: 45,
@@ -131,9 +131,25 @@ student2.forEach(function(element){
     else element.grade = "F";
     console.log("\n")
 })
-console.log(student2)  //returns an array
+console.log(student2) */  //returns an array
 //__________________________________________________________________________________________________
 
+//Project 2: Shopping cart logic
+let cart = []
 
-
-            
+function addItem(item, qty, price){
+    let existing = cart.find(e => e.name == item)
+    if (existing){
+        qty += qty
+    }
+    else{
+        cart.push({item, qty, price})
+    }
+}
+function removeitem (item){
+    
+}
+addItem("a", 50, 100)
+addItem("a", 20)
+console.log(cart)
+        
